@@ -11,6 +11,21 @@
    
     
 }
+
+#career li a:link{
+    color: black;
+    text-decoration: underline;
+}
+
+#career li a:active{
+    color: black;
+    text-decoration: underline;
+}
+#career li a:visited{
+    color: black;
+    text-decoration: underline;
+}
+
 #introduce{
     margin-bottom: 10px;
 }
