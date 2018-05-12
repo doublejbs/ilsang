@@ -1,7 +1,7 @@
 #introduce h{
     font-size: 50px;
     font-family: 'Nanum Myeongjo', serif;
-    font-style: italic;
+    
 }
 #introduce p{
     font-size: 100px;
@@ -23,22 +23,27 @@
 .images img{
     width: 100%;
     margin: 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
 }
 .post{
-    margin-top: 20px;
+    margin-top: 20px;  
 }
 .post textarea{
-    width: 100%;
+    width: 99%;
     height: 200px;
     border: 1px solid black;
-    
+    border-radius: 5px;
 }
+
 .post button{
     border: 1px solid black;
     text-align: center;
     width: 100%;
-    height: 30px;
+    height: 50px;
     background-color: black;
+    border-radius: 5px; 
+    
 }
 .post .button h{
     color: white;
@@ -46,5 +51,12 @@
 .post .title{
     text-align: center;
     font-size: 25px;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+   
 }
 
