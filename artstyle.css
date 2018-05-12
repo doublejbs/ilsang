@@ -13,8 +13,14 @@
     margin-bottom: 10px;
 }
 #career{
+    display: block;
     margin-top: 20px;
     font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 20px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 #career li{
     list-style: none;
