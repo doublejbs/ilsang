@@ -1,6 +1,13 @@
 #introduce h{
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Nanum Myeongjo', serif;
+    font-style: italic;
+}
+#introduce p{
+    font-size: 100px;
+    font-family: 'Nanum Myeongjo', serif;
+   margin: 0;
+    
 }
 #introduce{
     margin-bottom: 10px;
