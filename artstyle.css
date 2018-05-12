@@ -1,12 +1,14 @@
 #introduce h{
     font-size: 50px;
     font-family: 'Nanum Myeongjo', serif;
+    color: grey;
     
 }
 #introduce p{
     font-size: 100px;
     font-family: 'Nanum Myeongjo', serif;
    margin: 0;
+   
     
 }
 #introduce{
