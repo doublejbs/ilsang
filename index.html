@@ -1,8 +1,16 @@
 <!DOCTYPE HTMl>
+<html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="artstyle.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
 </head>
 <body>
     <div class="content" >
@@ -15,22 +23,91 @@
         <li>2017년 국민대 졸업전시회</li>
         <li><a href="https://www.instagram.com/jiu__an/">@jiu__an</a></li></div>
     </div>
-    <div class="images"><img src="1.jpeg" alt="1">
+    <div class="images">
+    
+    <img src="1.jpeg" alt="1">
+    
     <img src="4.jpeg" alt="4">
+    
     <img src="2.jpeg" alt="2">
+    
     <img src="3.jpeg" alt="3">
+    
+    
     </div>
-    <div class="post"><form action="/">
+    <div class="post">
+      <form method="post" action="/" class="postform">
        <div class="title"><h>전시에 대한 피드백을 남겨주세요</h></div>
-        <div class="feedback">
-           <textarea name="feedback" id="feedback" cols="150" rows="50"></textarea>
-        </div>
-        <div class="button">
-        <button type="submit"><h>피드백 보내기</h></button>
-        </div>
-    </form></div>
+        
+          <textarea id="feedback"  value="입력해주세요"></textarea>
+       
+        
+        <input type="submit" id="button" value="피드백 보내기">
+        
+    </form>
+    </div>
     <div class="foot">
         <img class="logo"src="logo.jpeg" alt="logo">
     </div>
     
+
+    <script>
+    var config = {
+    apiKey: "AIzaSyDUUkychpCHmWnhJpgbjx9Euxt5LPbtbmc",
+    authDomain: "ilsang-89eb3.firebaseapp.com",
+    databaseURL: "https://ilsang-89eb3.firebaseio.com",
+    projectId: "ilsang-89eb3",
+    storageBucket: "ilsang-89eb3.appspot.com",
+    messagingSenderId: "1077701752948"
+  };
+  firebase.initializeApp(config);
+  
+        
+  $('.postform').on('submit', event => {
+     event.preventDefault();
+     const content = $('#feedback').val();
+     
+     const dbRefObject = firebase.database().ref().child('content');
+     dbRefObject.push(content);
+     /*var valOfHeart = $(this).val();
+     var ref = firebase.database().ref().child('heart');
+     console.log(ref[valOfHeart]);
+     alert("제출완료!");
+     
+     
+     return*/
+     
+      
+      
+     alert('제출완료!');
+     
+  });
+        
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    </script>
 </body>
+
+
+
+</html>

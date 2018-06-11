@@ -14,19 +14,24 @@
 </head>
 <body>
     <div class="content" >
-        <div id="introduce"><p>Hansstory</p><h>일상 속의 모습을<br>관찰하는<br>일러스트레이터</h></div>
+        <div id="introduce"><p>이현정</p><h>바래져가는<br>아름답고 연약한 것들을<br>붙잡아 재구성한<br>기억의 조각들</h></div>
         <div id="career">
         <h></h>
-        <li>Agile monkey 피트니스 명함 작업 (2016)</li>
-        <li>가로수길 “Usome”전시회 참여 (2016)</li>
-        <li>“youth=cube(2017)”전시 참여/플리마켓 참여/기획</li>
-        <li>레스토랑 “이상한 나라의 미쓰윤”메뉴판 일러스트(2017)</li>
-        <li>서울여자대학교 사회복지대학원 ‘hi five’ 프로그램 삽화 및 프로젝트 로고 작업(2017)</li>
-        <li><a href="https://www.instagram.com/hansstory_workspace/">@hansstory_workspace</a></li></div>
+        <li>2016 관악현대미술대전 특선</li>
+        <li>2017 국민대 도자공예학과 졸업전시회
+</li>
+       <li>2017 국민대 조형갤러리 4인전</li>
+       <li>2018 한국문화정품관갤러리 아트큐브전 PLAY2 도자</li>
+        <li><a href="https://www.instagram.com/not.in.tune/">@not.in.tune</a></li></div>
     </div>
     <div class="images">
-    <img src="5.jpeg" alt="5">
-    <img src="6.jpeg" alt="6">
+    
+    <img src="7.jpeg" alt="1">
+    
+    <img src="8.jpeg" alt="4">
+    
+    <img src="9.jpeg" alt="2">
+    <img src="10.jpeg" alt="2">
     </div>
     <div class="post">
       <form method="post" action="/" class="postform">
@@ -42,6 +47,8 @@
     <div class="foot">
         <img class="logo"src="logo.jpeg" alt="logo">
     </div>
+    
+
     <script>
     var config = {
     apiKey: "AIzaSyDUUkychpCHmWnhJpgbjx9Euxt5LPbtbmc",
@@ -60,11 +67,34 @@
      
      const dbRefObject = firebase.database().ref().child('content');
      dbRefObject.push(content);
+     /*var valOfHeart = $(this).val();
+     var ref = firebase.database().ref().child('heart');
+     console.log(ref[valOfHeart]);
+     alert("제출완료!");
+     
+     
+     return*/
+     
+      
+      
      alert('제출완료!');
      
   });
+        
+  
+        
+          
+        
+        
+        
+        
+        
+        
+        
     
     </script>
-    
 </body>
+
+
+
 </html>

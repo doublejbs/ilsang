@@ -1,3 +1,15 @@
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+
 #introduce h{
     font-size: 30px;
     font-family: 'Nanum Myeongjo', serif;
@@ -52,40 +64,43 @@
     margin-bottom: 20px;
 }
 .post{
+    display: block;
     margin-top: 20px;
     
 }
 
-.post button{
-    
+#button{
+    -webkit-appearance:none;
     text-align: center;
     width: 100%;
     height: 50px;
     background-color: grey;
-}
-
-div.feedback{
-    display: flex;
-    justify-content: center;
-    resize: none;
-    height: 100px;
-    width: 100%;
-    border: 1px solid grey;
-    font-size: 120px;
-    margin-bottom: 15px;
-}
-#feedback{
-    font-size: 20px;
-    resize: none;
-}
-
-.post .button h{
     color: white;
     font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
 }
+
+
+#feedback{
+    
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    resize: none;
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    width: 99%;
+    height: 100px;
+    margin-bottom: 10px;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+
 .post .title{
     text-align: center;
-    font-size: 25px;
+    font-size: 22px;
+    font-family: 'Nanum Myeongjo', serif;
 }
 .logo{
     display: block;
@@ -93,4 +108,83 @@ div.feedback{
     margin-right: auto;
     width: 30%;
 }
+
+.heart {
+  display: inline-block;
+  position: relative;
+  bottom: 60px;
+  left: 89%;
+  background-color: white;
+  height: 30px;
+  transform: rotate(-45deg);
+  width: 30px;
+  
+}
+
+.heart:before, .heart:after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  left: 15px;
+  
+}
+
+.heart:before{
+    top: -15px;
+    left: 0px;
+}
+
+
+.heartclicked{
+    display: inline-block;
+  position: relative;
+  bottom: 60px;
+  left: 89%;
+  background-color: red;
+  height: 30px;
+  transform: rotate(-45deg);
+  width: 30px;
+  
+}
+
+.heartclicked:before, .heartclicked:after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  left: 15px;
+  
+}
+.heartclicked:before{
+    top: -15px;
+    left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
